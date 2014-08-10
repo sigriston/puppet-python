@@ -6,7 +6,7 @@ describe 'python' do
   let(:default_params) do
     {
       :pyenv_plugins    => {},
-      :pyenv_version    => 'v20140615',
+      :pyenv_version    => 'v20140705',
       :pyenv_root       => '/test/boxen/pyenv',
       :user             => 'boxenuser',
     }
@@ -23,7 +23,7 @@ describe 'python' do
     })
 
     should contain_repository('/test/boxen/pyenv').with({
-      :ensure => 'v20140615',
+      :ensure => 'v20140705',
       :source => 'yyuu/pyenv',
       :user   => 'boxenuser',
     })
